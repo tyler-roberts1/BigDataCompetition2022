@@ -6,6 +6,12 @@ The three primary methods to tackle this problem are logisitc regression, suppor
 
 # Major highlights of results
 1. Cleaned the data by removing missing values and outliers
-2. Engineered new features and identified key features using recurssive feature elimination resulting in a data reduction of 90%
+2. Engineered new features and identified key features using recurssive feature elimination (RFE) resulting in a data reduction of 90%
 3. Achieved good performance for both binary and multiclass classification through hyperparameter tuning
 4. Discovered data structure using clustering analysis
+
+# The major sections of this repository are as follows:
+data_overview_and_cleaning: Removing missing values and outliers from the data to make it easier to analyze
+feature_engineering_and_initial_modeling: Based on previous research on corporate default probability, we engineered novel features and used all features to model some initial results using logistic regression, SVM, and XGBoost.
+feature_selection: Using RFE we identified the most informative features while reducing error resulting in 14 key features, reduced from 144 initial features.
+hyperparameter_tuning_final_modelling: Using our features identified using RFE, we then predict corporate default probability using logistic regression.
